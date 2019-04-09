@@ -22,4 +22,15 @@ return [
         'my-module' => \modules\Module::class,
     ],
     //'bootstrap' => ['my-module'],
+    'components' => [
+        'redis' => [
+            'class' => yii\redis\Connection::class,
+            'hostname' => 'redis',
+            'port' => 6379,
+        ],
+        'cache' => [
+            'class' => yii\redis\Cache::class,
+            'defaultDuration' => 86400,
+        ],
+    ],
 ];
