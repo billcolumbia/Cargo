@@ -20,3 +20,8 @@ Docker env for Craft CMS
     - Database password: **secret**
     - Database name: **craft_db_name_you_pick**
     - Database table prefix: leave blank
+
+To add:
+    - Redis
+    - Debug Toolbar
+    - docker-sync? for faster page loads...
