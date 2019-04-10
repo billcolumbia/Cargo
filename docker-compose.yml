@@ -7,6 +7,8 @@ volumes:
 services:
   php:
     build: './Docker/php'
+    depends_on:
+      - db
     networks:
       - backend
     volumes:
@@ -32,6 +34,7 @@ services:
       - backend
     environment:
       MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: craft3
     volumes:
       - dbs:/var/lib/mysql
     expose:
