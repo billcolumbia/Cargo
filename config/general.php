@@ -32,7 +32,7 @@ return [
     'dev' => [
         // Dev Mode (see https://craftcms.com/guides/what-dev-mode-does)
         'devMode' => true,
-        'siteUrl' => 'localhost:4000'
+        'siteUrl' => 'localhost:4000',
     ],
 
     // Staging environment settings
