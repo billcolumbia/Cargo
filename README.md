@@ -7,7 +7,7 @@ Docker env for Craft CMS
 - Clone this repo
 - `composer install`
 - `docker-compose up -d --build`
-- `docker-compose exec db bash`
+- `docker-compose exec php bash`
 - `./craft setup`
 - Follow prompts:
     - Which database driver are you using?: **mysql**
